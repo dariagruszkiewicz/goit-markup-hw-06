@@ -376,7 +376,7 @@
         <div>
           <h3 class="footer-title">Zapisz się do newslettera</h3>
           <form>
-            <label class="footer-form-box">
+            <div class="footer-form-box">
               <input class="footer-form-input" type="email" name="email" placeholder="E-mail" />
               <button class="footer-form-button" type="submit">
                 Zapisz się
@@ -384,7 +384,7 @@
                   <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
-            </label>
+            </div>
           </form>
         </div>
       </div>
@@ -394,6 +394,52 @@
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11"><use href="./images/icons.svg#icon-Vector"></use></svg>
         </button>
+        <h3 class="main-form-title">Zostaw swoje dane w formularzu poniżej</h3>
+        <form>
+          <div class="main-form-box">
+            <label for="name">Imie</label>
+            <div class="main-form-item">
+              <input type="text" id="name" required />
+              <svg class="form-icons" width="12" height="12">
+                <use href="./images/icons.svg#icon-Vector1"></use>
+              </svg>
+            </div>
+            <label for="phone-number">Telefon</label>
+            <div class="main-form-item">
+              <input type="tel" id="phone-number" required />
+              <svg class="form-icons" width="13" height="13">
+                <use href="./images/icons.svg#icon-Vector2"></use>
+              </svg>
+            </div>
+            <label for="email">Email</label>
+            <div class="main-form-item">
+              <input type="email" id="email" required />
+              <svg class="form-icons" width="15" height="12">
+                <use href="./images/icons.svg#icon-Vector3"></use>
+              </svg>
+            </div>
+            <label>Komentarz</label>
+            <textarea
+              class="form-comment-textarea"
+              name="comment"
+              rows="6"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+          </div>
+          <div class="form-checkbox-box">
+            <input type="checkbox" name="confirmation" class="form-checkbox" />
+            <svg class="form-checkbox-icon" width="11" height="8">
+              <use href="./images/icons.svg#icon-Vector4"></use>
+            </svg>
+            <span class="form-checkbox-text"
+              >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności.</a></span
+            >
+          </div>
+          <div class="main-form-button-box">
+            <button class="main-form-button" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
