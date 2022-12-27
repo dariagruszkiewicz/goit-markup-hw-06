@@ -734,7 +734,7 @@ ul {
 
 .form-checkbox {
   margin-left: 52px;
-  height: 15px;
+  height: 16px;
   width: 16px;
   border-radius: 2px;
   apperance: none;
@@ -745,7 +745,7 @@ ul {
   width: 16px;
   position: absolute;
   left: 52px;
-  top: 3px;
+  top: 1px;
   fill: #ffffff;
   background-color: #2196f3;
   border-radius: 2px;

@@ -408,7 +408,7 @@
             </div>
             <label for="phone-number">Telefon</label>
             <div class="main-form-item">
-              <input type="tel" id="phone-number" name="phone-number" required />
+              <input type="tel" id="phone-number" name="phone" pattern="[0-9\]{9}" required />
               <svg class="form-icons" width="13" height="13">
                 <use href="./images/icons.svg#icon-Vector2"></use>
               </svg>
@@ -428,8 +428,8 @@
               placeholder="Wprowadź tekst"
             ></textarea>
           </div>
-          <div class="form-checkbox-box">
-            <input type="checkbox" name="confirmation" class="form-checkbox" />
+          <label class="form-checkbox-box">
+            <input type="checkbox" name="confirmation" class="form-checkbox" required />
             <svg class="form-checkbox-icon" width="11" height="8">
               <use href="./images/icons.svg#icon-Vector4"></use>
             </svg>
@@ -437,7 +437,7 @@
               >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
               <a href="#">Politykę Prywatności.</a></span
             >
-          </div>
+          </label>
           <div class="main-form-button-box">
             <button class="main-form-button" type="submit">Wyślij</button>
           </div>
