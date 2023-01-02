@@ -26,11 +26,11 @@ body {
   color: #000000;
 }
 
-.logo-front {
+.nav__logo--color {
   color: #2196f3;
 }
 
-.nav-link {
+.nav__link {
   color: #212121;
   text-decoration: none;
   font-weight: 500;
@@ -40,7 +40,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts-link {
+.header__contacts-link {
   color: #757575;
   text-decoration: none;
   font-weight: 500;
@@ -50,48 +50,48 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-icons {
+.header__icons {
   margin-right: 10px;
   fill: #afb1b8;
 }
 
-.header-contacts-link-list {
+.header__list {
   list-style-type: none;
   display: flex;
 }
 
-.header-contacts-link-list-item {
+.header__item {
   display: flex;
   align-items: center;
 }
 
-.header-contacts-link-list-item:hover,
-.header-contacts-link-list-item:focus {
+.header__item:hover,
+.header__item:focus {
   cursor: pointer;
 }
 
-.header-contacts-link-list-item:hover > .header-icons,
-.header-contacts-link-list-item:focus > .header-icons {
+.header__item:hover > .header__icons,
+.header__item:focus > .header__icons {
   fill: #2196f3;
 }
 
-.header-contacts-link-list-item:hover > .header-contacts-link,
-.header-contacts-link-list-item:focus > .header-contacts-link {
+.header__item:hover > .header__contacts-link,
+.header__item:focus > .header__contacts-link {
   color: #2196f3;
 }
 
-.header-box {
+.header {
   display: flex;
   height: 80px;
   align-items: center;
 }
 
-.nav-box {
+.nav {
   display: flex;
   align-items: center;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,16 +100,15 @@ body {
   margin-right: 345px;
 }
 
-.nav-list-item {
+.nav__item {
   position: relative;
 }
 
-.nav-link-active-agency,
-.nav-link-active-portfolio {
+.nav__link--active {
   color: #2196f3;
 }
 
-.nav-link-active-agency::after {
+.nav__link--active::after {
   content: '';
   position: absolute;
   width: 53px;
@@ -131,14 +130,14 @@ body {
   border-radius: 2px;
 }
 
-.logo-header-box {
+.header__logo {
   width: 145px;
   display: flex;
   justify-content: flex-start;
   margin-right: 93px;
 }
 
-.header-contacts-link-mail {
+.header__contacts-link--margin {
   margin-right: 30px;
 }
 
@@ -149,7 +148,7 @@ body {
   padding-bottom: 94px;
 }
 
-.main-title {
+.first-section__title {
   color: #ffffff;
   font-size: 2.75rem;
   font-weight: 900;
@@ -163,7 +162,7 @@ body {
   margin: 0 auto;
 }
 
-.main-button {
+.first-section__button {
   font-weight: 700;
   line-height: 1.88;
   text-align: center;
@@ -181,8 +180,8 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-button:hover,
-.main-button:focus,
+.first-section__button:hover,
+.first-section__button:focus,
 .footer-form-button:hover,
 .footer-form-button:focus,
 .main-form-button:hover,
@@ -199,7 +198,7 @@ body {
   display: flex;
 }
 
-.second-section-title,
+.second-section__title,
 .footer-title {
   font-weight: 700;
   font-size: 0.88rem;
@@ -208,14 +207,17 @@ body {
   text-transform: uppercase;
 }
 
-.second-section-description {
+.second-section__description {
   font-size: 0.88rem;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.subtitle {
+.third-section__title,
+.our-customers-section__title,
+.employee-section__title
+{
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 1.16;
@@ -225,7 +227,7 @@ body {
   margin: 0 auto;
 }
 
-.employee-names {
+.employee-section__names {
   font-weight: 500;
   line-height: 1.18;
   text-align: center;
@@ -235,7 +237,7 @@ body {
   padding-bottom: 10px;
 }
 
-.employee-position {
+.employee-section__position {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
@@ -248,18 +250,18 @@ body {
   padding-bottom: 0px;
 }
 
-.second-section-list {
+.second-section__list {
   display: flex;
   width: 1170px;
   padding-left: 0px;
   gap: 30px;
 }
 
-.third-section-box {
+.third-section {
   width: 1170px;
 }
 
-.third-section-list {
+.third-section__list {
   display: flex;
   justify-content: space-between;
   padding-left: 0px;
@@ -270,23 +272,23 @@ body {
   background-color: #f5f4fa;
 }
 
-.employee-list {
+.employee-section__list {
   display: flex;
   width: 1170px;
   justify-content: space-between;
   padding-left: 0px;
 }
 
-.employee-list-item {
+.employee-section__item {
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
   border-radius: 0px 0px 4px 4px;
 }
 
-.emloyee-list-item-img {
+.employee-section__img {
   vertical-align: middle;
 }
 
-.second-section-list-icons {
+.second-section__icons {
   height: 120px;
   width: 270px;
   padding: 25px 100px;
@@ -294,7 +296,7 @@ body {
   margin-bottom: 30px;
 }
 
-.employee-social-links {
+.employee-section__social-links {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -305,7 +307,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.employee-social-links-item {
+.employee-section__social-links-item {
   width: 44px;
   height: 44px;
   justify-content: center;
@@ -314,8 +316,8 @@ body {
   fill: #afb1b8;
 }
 
-.employee-social-links-item:hover,
-.employee-social-links-item:focus {
+.employee-section__social-links-item:hover,
+.employee-section__social-links-item:focus {
   fill: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
@@ -326,7 +328,7 @@ body {
   width: 1170px;
 }
 
-.our-customer-list {
+.our-customers-section__list {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -334,7 +336,7 @@ body {
   fill: #afb1b8;
 }
 
-.our-customers-list-item {
+.our-customers-section__item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -343,19 +345,19 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-customers-list-item:hover,
-.our-customers-list-item:focus {
+.our-customers-section__item:hover,
+.our-customers-section__item:focus {
   cursor: pointer;
   fill: #2196f3;
   border-color: #2196f3;
 }
 
-.third-section-list-item {
+.third-section__item {
   position: relative;
   display: flex;
 }
 
-.third-section-list-item-description {
+.third-section__description {
   position: absolute;
   bottom: 0;
   left: 0;
